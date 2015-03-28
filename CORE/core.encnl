@@ -1,0 +1,23 @@
+﻿Title: 'OWO World Ontology - Core Concepts'.
+Author: 'Marcelle von Wendland'.
+
+Namespace: 'http://www.owo.foundation/owo/core/'.
+
+Part: 01 'context'.
+
+Something is an entity[owo] if-and-only-if-it is something.
+
+Every object-class[owo] is an entity[owo].
+Every object-grounding-category[owo] is an entity[owo].
+Every object-moment-category[owo] is an entity[owo].
+Every object-genericity-category[owo] is an entity[owo].
+Every object-fusion-category[owo] is an entity[owo].
+Every object-authority-category[owo] is an entity[owo].
+Every object-authentication-category[owo] is an entity[owo].
+Every object-temporal-extent-category[owo] is an entity[owo].
+Every object-spatial-extent-category[owo] is an entity[owo].
+Every object-symbolic-referential-category[owo] is an entity[owo].
+
+References:
+[owo] 'http://www.owo.foundation/owo/core/core.rdf#').
+

@@ -1,0 +1,89 @@
+﻿
+Comment: Copyright:             Copyright (c) 2015 by Huuzlee Ltd, Bancstreet Capital Partners Ltd and the Trustees of the Owo Foundation Commnity Trust.
+
+Comment: License:               Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+Comment: License-Conditions:     THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT; IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
+
+Namespace: 'http://ontologies.owo.foundation/owo/core/ontology.rdf'.
+
+Part: 00 'Core Category Anchors'.
+
+Something is an entity[owo] if-and-only-if-it is something.
+
+Every object-class[owo] is an entity[owo].
+Every object-symbolic-category[owo] is an entity[owo].
+Every object-grounding-category[owo] is an entity[owo].
+Every object-genericity-category[owo] is an entity[owo].
+Every object-fusion-category[owo] is an entity[owo].
+Every object-authority-category[owo] is an entity[owo].
+Every object-authentication-category[owo] is an entity[owo].
+Every object-spatial-extent-category[owo] is an entity[owo].
+Every object-temporal-extent-category[owo] is an entity[owo].
+Every object-moment-category[owo] is an entity[owo].
+
+Part: 08 'Ontology of Spatial Presence'.
+
+Every spatial-extent[owo] is an object-spatial-extent-category[owo].
+    Every spatial-region[owo] is an spatial-extent[owo].
+    Every spatial-body[owo] is an spatial-extent[owo].
+        Every open-body[owo] is an spatial-body[owo].
+            Every liquid-body[owo] is an open-body[owo].
+            Every gasplasma-body[owo] is an open-body[owo].
+            Every empty-body[owo] is an open-body[owo].
+        Every closed-body[owo] is an spatial-body[owo].
+            Every solid-body[owo] is a closed-body[owo].
+                Every thermoplastic-solid-body[owo] is a solid-body[owo].
+                Every thermoset-solid-body[owo] is a solid-body[owo].
+Every spatial-observation[owo] is an object-spatial-extent-category[owo].
+    Every spatial-point[owo] is a spatial-observation[owo].    
+            Every left-spatial-point[owo] is a spatial-point[owo].
+                Every open-left-spatial-point[owo] is a left-spatial-point[owo].
+                Every closed-left-spatial-point[owo] is a left-spatial-point[owo].
+            Every right-spatial-point[owo] is a spatial-point[owo].
+                Every open-right-spatial-point[owo] is a right-spatial-point[owo].
+                Every closed-right-spatial-point[owo] is a right-spatial-point[owo].
+            Every fiat-spatial-point[owo] is a spatial-point[owo].
+    Every spatial-boundary[owo] is an spatial-observation[owo].
+        Every boundary-vertex[owo] is a spatial-boundary[owo].    
+        Every boundary-edge[owo] is a spatial-boundary[owo]. 
+        Every boundary-face[owo] is a spatial-boundary[owo].  
+    Every spatial-join[owo] is a spatial-observation[owo]. 
+        Every spatial-axis[owo] is a spatial-join[owo]. 
+            Every left-open-axis[owo] is a spatial-axis[owo]. 
+            Every right-open-axis[owo] is a spatial-axis[owo]. 
+            Every open-axis[owo] is a spatial-axis[owo]. 
+            Every spatial-distance[owo] is a spatial-axis[owo]. 
+        Every spatial-direction[owo] is a spatial-join[owo].  
+            Every open-direction[owo] is a spatial-direction[owo].  
+                Every left-open-direction[owo] is a open-direction[owo]. 
+                Every right-open-direction[owo] is a open-direction[owo]. 
+            Every closed-direction[owo] is a spatial-direction[owo]. 
+                Every leftward-direction[owo] is a closed-direction[owo]. 
+                Every rightward-direction[owo] is a closed-direction[owo]. 
+
+Every spatial-relationship[owo] is an object-spatial-extent-category[owo].
+    Every origin[owo] is an spatial-relationship[owo].
+    Every projection[owo] is an spatial-relationship[owo].
+    Every distance-measure[owo] is an spatial-relationship[owo].
+
+References:
+[dc] 'http://purl.org/dc/elements/1.1/' ('http://purl.org/dc/elements/1.1/')
+[owl2] 'http://www.w3.org/2006/12/owl2#' ('http://www.w3.org/2006/12/owl2#')
+[owl2xml] 'http://www.w3.org/2006/12/owl2-xml#' ('http://www.w3.org/2006/12/owl2-xml#')
+[skos] 'http://www.w3.org/2004/02/skos/core' ('http://www.w3.org/2004/02/skos/core')
+[owo] 'http://ontologies.owo.foundation/owo/core/ontology.rdf#' ('http://ontologies.owo.foundation/owo/core/ontology.rdf#').
+
+
+

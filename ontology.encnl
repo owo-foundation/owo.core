@@ -1,0 +1,313 @@
+﻿
+Comment: Copyright:             Copyright (c) 2015 by Huuzlee Ltd, Bancstreet Capital Partners Ltd and the Trustees of the Owo Foundation Community Trust.
+
+Comment: License:               Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+Comment: License-Conditions:     THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT; IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
+
+Namespace: 'http://ontologies.owo.foundation/owo/core/ontology.rdf'.
+
+Part: 00 'Core Category Anchors'.
+
+Something is an entity[owo] if-and-only-if-it is something.
+
+Every object-class[owo] is an entity[owo].
+Every object-symbolic-category[owo] is an entity[owo].
+Every object-grounding-category[owo] is an entity[owo].
+Every object-genericity-category[owo] is an entity[owo].
+Every object-fusion-category[owo] is an entity[owo].
+Every object-authority-category[owo] is an entity[owo].
+Every object-authentication-category[owo] is an entity[owo].
+Every object-spatial-extent-category[owo] is an entity[owo].
+Every object-temporal-extent-category[owo] is an entity[owo].
+Every object-precision-category[owo] is an entity[owo].
+Every object-density-category[owo] is an entity[owo].
+Every object-moment-category[owo] is an entity[owo].
+
+
+Part-01: 'Ontology of Object Class Anchors '.
+
+Every symbolic-object[owo] is an object[owo].
+    Every symbolic-value[owo] is a symbolic-object[owo].
+    Every symbolic-function[owo] is a symbolic-object[owo].
+Every constructional-object[owo] is an object[owo].
+    Every attribute[owo] is a constructional-object[owo].
+    Every relationship[owo] is a constructional-object[owo].
+Every experiential-object[owo] is a constructional-object[owo].
+    Every person[owo] is an experiential-object[owo].
+    Every place[owo] is an experiential-object[owo].
+    Every product[owo] is an experiential-object[owo].
+    Every process[owo] is an experiential-object[owo].
+
+
+Part-02: 'Ontology of Symbolic Category Anchors '.
+
+Every symbolic-reference[owo] is an object-symbolic-category[owo].
+Every symbolic-interpretation[owo] is an object-symbolic-category[owo].
+Every symbolic-original[owo] is an object-symbolic-category[owo].
+
+
+Part-03: 'Ontology of How Objects are Grounded '.
+
+Comment: Object groundings are important because they differentiate between alternative ways in which physical and mental objects manifest themselves.
+
+Every physical-universe[owo] is an object-grounding-category[owo].
+
+    Every body-universe[owo] is a physical-universe[owo].
+        Every monolithic-body-universe[owo] is a body-universe[owo].
+        Every composite-body-universe[owo] is a body-universe[owo].
+
+    Every material-universe[owo] is a physical-universe[owo].
+        Every homogenous-material-universe[owo] is a material-universe[owo].
+        Every compound-material-universe[owo] is a material-universe[owo].
+
+    Every atomic-universe[owo] is a physical-universe[owo].
+        Every molecular-universe[owo] is a atomic-universe[owo].
+        Every elemental-universe[owo] is a atomic-universe[owo].
+        Every particle-universe[owo] is a atomic-universe[owo].
+
+    Every energetic-universe[owo] is a physical-universe[owo].
+        Every energetic-potential[owo] is a energetic-universe[owo].
+        Every energetic-field[owo] is a energetic-universe[owo].
+        Every energetic-wave[owo] is a energetic-universe[owo].
+
+Every mental-universe[owo] is a object-grounding-category[owo].
+    Every personal-universe[owo] is an mental-universe[owo].
+    Every social-universe[owo] is an mental-universe[owo].
+    Every textual-universe[owo] is an mental-universe[owo].
+
+
+Part-04: 'Ontology of Object Genericity'.
+
+Every concept is an object-genericity-category.
+    Every abstract-concept is a concept.
+    Every concrete-concept is a concept.
+Every prototype is an object-genericity-category.
+    Every abstract-prototype is a prototype.
+    Every concrete-prototype is a prototype.
+Every instance is an object-genericity-category.
+    Every perfect-instance is an instance.
+    Every modified-instance is an instance.
+
+
+Part-05: 'Ontology of Object Fusion'.
+
+Every composable is an object-fusion-category.
+    Every discrete-composable is a composable.
+    Every fusible-composable is a composable.
+    Every hybrid-composable is a composable.
+Every composition is a object-fusion-category.
+    Every assembly is a composition.
+        Every unstructured-assembly is an assembly.
+        Every structured-assembly is an assembly.
+            Every configuration is an assembly.  
+            Comment: An unmediated arrangement of composables.
+            Every mediated-assembly is an assembly.
+            Every package is an mediated-assembly.
+            Comment: An arrangement of composables with a mediated binding force or element.
+            Every construction is a mediated-assembly.
+                Every simple-construction is a mediated-assembly.
+                Every composite-construction is a mediated-assembly.
+            Comment: A permanent arrangement of composables with an element of transformation .
+    Every fusion is a composition.
+        Every adhesive-fusion is a fusion.
+            Every self-adhesive-fusion is a adhesive-fusion.
+            Every adhesive-agent-fusion is a adhesive-fusion.
+        Every substrate-fusion is a fusion.
+            Every surface-fusion is a substrate-fusion.
+                Every surface-self-fusion is a surface-fusion.
+                Every surface-agent-fusion is a surface-fusion.
+            Every substrate-mix is a substrate-fusion.
+                Every self-mix is a substrate-mix.
+                Every agent-mix is a substrate-mix.  
+
+Part: 06 'Ontology of authority for concepts'.
+
+Every source-authority[owo] is an object-authority-category[owo].
+    Every direct-source[owo] is an source-authority[owo].
+    Every textual-source[owo] is an source-authority[owo].
+
+Every reference-authority[owo] is an object-authority-category[owo].
+    Every sensor-reference[owo] is an reference-authority[owo].
+    Every textual-reference[owo] is an reference-authority[owo].
+
+
+Part: 07 'Ontology of Concept Authentication'.
+
+Every authenticable [owo] is an object-authentication-category[owo].
+    Every authenticable-by-assertion [owo] is an authenticable[owo].
+    Every authenticable-by-proof [owo] is an authenticable[owo].
+    Every empirically-authenticable [owo] is a authenticable[owo].
+Every authentication [owo] is an object-authentication-category[owo].
+    Every authentication-evidence [owo] is an authentication[owo].
+        Every positive-evidence [owo] is an authentication-evidence[owo].
+        Every negative-evidence [owo] is an authentication-evidence[owo].
+        Every complex-evidence [owo] is an authentication-evidence[owo].
+    Every authentication-assertion [owo] is an authentication[owo].
+        Every authentication-assertion-rule [owo] is an authentication-assertion[owo].
+        Every authentication-assertion-value [owo] is an authentication-assertion[owo].
+            Every asserted-true [owo] is an authentication-assertion-value[owo].
+            Every asserted-false [owo] is an authentication-assertion-value[owo].
+
+
+Part: 08 'Ontology of Spatial Presence'.
+
+Every spatial-extent[owo] is an object-spatial-extent-category[owo].
+    Every spatial-region[owo] is an spatial-extent[owo].
+    Every spatial-body[owo] is an spatial-extent[owo].
+        Every open-body[owo] is an spatial-body[owo].
+            Every liquid-body[owo] is an open-body[owo].
+            Every gasplasma-body[owo] is an open-body[owo].
+            Every empty-body[owo] is an open-body[owo].
+        Every closed-body[owo] is an spatial-body[owo].
+            Every solid-body[owo] is a closed-body[owo].
+                Every thermoplastic-solid-body[owo] is a solid-body[owo].
+                Every thermoset-solid-body[owo] is a solid-body[owo].
+Every spatial-observation[owo] is an object-spatial-extent-category[owo].
+    Every spatial-point[owo] is a spatial-observation[owo].    
+            Every left-spatial-point[owo] is a spatial-point[owo].
+                Every open-left-spatial-point[owo] is a left-spatial-point[owo].
+                Every closed-left-spatial-point[owo] is a left-spatial-point[owo].
+            Every right-spatial-point[owo] is a spatial-point[owo].
+                Every open-right-spatial-point[owo] is a right-spatial-point[owo].
+                Every closed-right-spatial-point[owo] is a right-spatial-point[owo].
+            Every fiat-spatial-point[owo] is a spatial-point[owo].
+    Every spatial-boundary[owo] is an spatial-observation[owo].
+        Every boundary-vertex[owo] is a spatial-boundary[owo].    
+        Every boundary-edge[owo] is a spatial-boundary[owo]. 
+        Every boundary-face[owo] is a spatial-boundary[owo].  
+    Every spatial-join[owo] is a spatial-observation[owo]. 
+        Every spatial-axis[owo] is a spatial-join[owo]. 
+            Every left-open-axis[owo] is a spatial-axis[owo]. 
+            Every right-open-axis[owo] is a spatial-axis[owo]. 
+            Every open-axis[owo] is a spatial-axis[owo]. 
+            Every spatial-distance[owo] is a spatial-axis[owo]. 
+        Every spatial-direction[owo] is a spatial-join[owo].  
+            Every open-direction[owo] is a spatial-direction[owo].  
+                Every left-open-direction[owo] is a open-direction[owo]. 
+                Every right-open-direction[owo] is a open-direction[owo]. 
+            Every closed-direction[owo] is a spatial-direction[owo]. 
+                Every leftward-direction[owo] is a closed-direction[owo]. 
+                Every rightward-direction[owo] is a closed-direction[owo]. 
+
+Every spatial-relationship[owo] is an object-spatial-extent-category[owo].
+    Every origin[owo] is an spatial-relationship[owo].
+    Every projection[owo] is an spatial-relationship[owo].
+    Every distance-measure[owo] is an spatial-relationship[owo].
+
+
+Part-09: 'Ontology of Temporality '.
+
+Every endurant-observable[owo] is an object-temporal-extent-category[owo].
+    Every open-object[owo] is an endurant-observable[owo].
+        Every influential-open-object[owo] is an open-object[owo].
+            Every transparent-influential-open-object[owo] is an influential-open-object[owo].
+            Every semi-opaque-influential-open-object[owo] is an influential-open-object[owo].
+            Every opaque-influential-open-object[owo] is an influential-open-object[owo].
+        Every isolated-open-object[owo] is an open-object[owo].
+            Every transparent-isolated-open-object[owo] is an isolated-open-object[owo].
+            Every semi-opaque-isolated-open-object[owo] is an isolated-open-object[owo].
+            Every opaque-isolated-open-object[owo] is an isolated-open-object[owo].
+    Every closed-object[owo] is an endurant-observable[owo].
+        Every influential-closed-object[owo] is a closed-object[owo].
+            Every transparent-influential-closed-object[owo] is an influential-closed-object[owo].
+            Every semi-opaque-influential-closed-object[owo] is an influential-closed-object[owo].
+            Every opaque-influential-closed-object[owo] is an influential-closed-object[owo].
+        Every isolated-closed-object[owo] is an closed-object[owo].
+            Every transparent-isolated-closed-object[owo] is an isolated-closed-object[owo].
+            Every semi-opaque-isolated-closed-object[owo] is an isolated-closed-object[owo].
+            Every opaque-isolated-closed-object[owo] is an isolated-closed-object[owo].
+
+Every perdurant-observation[owo] is an object-temporal-extent-category[owo].
+    Every temporal-boundary[owo] is a perdurant-observation[owo].    
+        Every left-temporal-boundary[owo] is a temporal-boundary[owo].
+            Every abstract-left-temporal-boundary[owo] is a left-temporal-boundary[owo].
+            Every open-left-temporal-boundary[owo] is a left-temporal-boundary[owo].
+            Every closed-left-temporal-boundary[owo] is a left-temporal-boundary[owo].
+        Every right-temporal-boundary[owo] is a temporal-boundary[owo].
+            Every abstract-right-temporal-boundary[owo] is a right-temporal-boundary[owo].
+            Every open-right-temporal-boundary[owo] is a right-temporal-boundary[owo].
+            Every closed-right-temporal-boundary[owo] is a right-temporal-boundary[owo].
+    Every event[owo] is a perdurant-observation[owo].    
+        Every abstract-event[owo] is an event[owo].
+        Every temporal-event[owo] is an event[owo].
+        Every event-history[owo] is an event[owo].
+            Every complete-event-history[owo] is an event-history[owo].
+            Every partial-event-history[owo] is an event-history[owo].
+    Every period[owo] is a perdurant-observation[owo].
+        Every left-open-period[owo] is a period[owo].
+            Every abstract-left-open-period[owo] is a left-open-period[owo].
+            Every temporal-left-open-period[owo] is a left-open-period[owo].
+        Every right-open-period[owo] is a period[owo].
+            Every abstract-right-open-period[owo] is a right-open-period[owo].
+        Every closed-period[owo] is a period[owo].
+        Every fiat-period[owo] is a period[owo].
+        Every period-trace[owo] is a period[owo].
+            Every composite-period-trace[owo] is a period-trace[owo].
+            Every complete-period-trace[owo] is a period-trace[owo].
+            Every partial-period-trace[owo] is a period-trace[owo].
+
+Part-10: 'Ontology of Conceptual/Perceptual Precision '.
+
+Every crisp-observation[owo] is an object-precision-category[owo].
+Every rough-observation[owo] is an object-precision-category[owo].
+
+
+Part-11: 'Ontology of Allowable Object Density/Overlap'.
+
+Every discrete-density-world[owo] is an object-density-category[owo].
+    Every finite-discrete-density-world[owo] is an discrete-density-world[owo].
+        Every singular-universe-world[owo] is an finite-discrete-density-world[owo].
+        Every finite-parallel-universe-world[owo] is an finite-discrete-density-world[owo].
+    Every infinite-parallel-universe-world[owo] is an discrete-density-world[owo].
+Every continuous-density-world[owo] is an object-density-category[owo].
+
+
+Part: 12 'Ontology of Moments/Symbolic Observation'.
+
+Every attributive-observation[owp] is a object-moment-category[owo].
+    Every identification[owp] is an attributive-observation[owp].
+    Every naming[owp] is an attributive-observation[owp].
+    Every recording[owp] is an attributive-observation[owp].
+    Every description[owp] is an attributive-observation[owp].
+    Every measurement[owp] is an attributive-observation[owp].
+    Every analytic[owp] is an attributive-observation[owp].
+    Every tagging[owp] is an attributive-observation[owp].
+    Every rating[owp] is an attributive-observation[owp].
+    Every classification[owp] is an attributive-observation[owp].
+    Every grouping[owp] is an attributive-observation[owp].
+    Every edge-value[owp] is an attributive-observation[owp].
+    Every point-value[owp] is an attributive-observation[owp].
+    Every value-tuple[owp] is an attributive-observation[owp].
+    Every function-domain-tuple[owp] is an attributive-observation[owp].
+    Every function-range-tuple[owp] is an attributive-observation[owp].
+
+Every relational-observation[owp] is a relational-observation[owo].
+    Every mereo-relation[owp] is a relational-observation[owo].
+        Every mereological-observation[owp] is a mereo-relation[owo].
+        Every mereonymical-observation[owp] is a mereo-relation[owo].
+        Every mereotopological-observation[owp] is a mereo-relation[owo].
+    Every order-relation[owp] is a relational-observation[owo].
+    Every compositive-relation[owp] is a relational-observation[owo].
+    Every reductive-relation[owp] is a relational-observation[owo].
+    Every agglomerative-relation[owp] is a relational-observation[owo].
+    Every transformative-relation[owp] is a relational-observation[owo].
+    Every semiotic-relation[owp] is a relational-observation[owo].
+
+
+References:
+[dc] 'http://purl.org/dc/elements/1.1/' ('http://purl.org/dc/elements/1.1/')
+[owl2] 'http://www.w3.org/2006/12/owl2#' ('http://www.w3.org/2006/12/owl2#')
+[owl2xml] 'http://www.w3.org/2006/12/owl2-xml#' ('http://www.w3.org/2006/12/owl2-xml#')
+[skos] 'http://www.w3.org/2004/02/skos/core' ('http://www.w3.org/2004/02/skos/core')
+[owo] 'http://ontologies.owo.foundation/owo/core/ontology.rdf#' ('http://ontologies.owo.foundation/owo/core/ontology.rdf#').

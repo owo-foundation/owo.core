@@ -1,0 +1,53 @@
+﻿
+Comment: Copyright:             Copyright (c) 2015 by Huuzlee Ltd, Bancstreet Capital Partners Ltd and the Trustees of the Owo Foundation Commnity Trust.
+
+Comment: License:               Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+Comment: License-Conditions:     THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT; IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
+
+Namespace: 'http://ontologies.owo.foundation/owo/core/ontology.rdf'.
+
+Part: 00 'Core Category Anchors'.
+
+Something is an entity[owo] if-and-only-if-it is something.
+
+Every object-class[owo] is an entity[owo].
+Every object-symbolic-category[owo] is an entity[owo].
+Every object-grounding-category[owo] is an entity[owo].
+Every object-genericity-category[owo] is an entity[owo].
+Every object-fusion-category[owo] is an entity[owo].
+Every object-authority-category[owo] is an entity[owo].
+Every object-authentication-category[owo] is an entity[owo].
+Every object-spatial-extent-category[owo] is an entity[owo].
+Every object-temporal-extent-category[owo] is an entity[owo].
+Every object-moment-category[owo] is an entity[owo].
+
+Part: 06 'Ontology of authority for concepts'.
+
+Every source-authority[owo] is an object-authority-category[owo].
+    Every direct-source[owo] is an source-authority[owo].
+    Every textual-source[owo] is an source-authority[owo].
+
+Every reference-authority[owo] is an object-authority-category[owo].
+    Every sensor-reference[owo] is an reference-authority[owo].
+    Every textual-reference[owo] is an reference-authority[owo].
+
+
+References:
+[dc] 'http://purl.org/dc/elements/1.1/' ('http://purl.org/dc/elements/1.1/')
+[owl2] 'http://www.w3.org/2006/12/owl2#' ('http://www.w3.org/2006/12/owl2#')
+[owl2xml] 'http://www.w3.org/2006/12/owl2-xml#' ('http://www.w3.org/2006/12/owl2-xml#')
+[skos] 'http://www.w3.org/2004/02/skos/core' ('http://www.w3.org/2004/02/skos/core')
+[owo] 'http://ontologies.owo.foundation/owo/core/ontology.rdf#' ('http://ontologies.owo.foundation/owo/core/ontology.rdf#').
+

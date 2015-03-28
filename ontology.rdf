@@ -1,0 +1,922 @@
+﻿<?xml version = '1.0' encoding = 'UTF-8'?>
+<rdf:RDF xmlns="http://ontologies.owo.foundation/owo/core/ontology.rdf#" xml:base="http://ontologies.owo.foundation/owo/core/ontology.rdf" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:owo="http://www.owo.foundation/owo/core/" xmlns:owl2="http://www.w3.org/2006/12/owl2#" xmlns:skos="http://www.w3.org/2004/02/skos/core" xmlns:owl2xml="http://www.w3.org/2006/12/owl2-xml#">
+  <owl:Ontology rdf:about="http://ontologies.owo.foundation/owo/core/ontology.rdf#">
+    <owl:imports rdf:resource="http://purl.org/dc/elements/1.1/" />
+    <owl:imports rdf:resource="http://www.owo.foundation/owo/core/" />
+    <owl:imports rdf:resource="http://www.w3.org/2004/02/skos/core" />
+    <owl:imports rdf:resource="http://www.w3.org/2006/12/owl2" />
+    <owl:imports rdf:resource="http://www.w3.org/2006/12/owl2-xml" />
+  </owl:Ontology>
+  <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+  <!-- http://ontologies.owo.foundation/owo/core/ontology.rdf#AbstractConcept -->
+  <owl:Class rdf:about="http://ontologies.owo.foundation/owo/core/ontology.rdf#AbstractConcept">
+    <rdfs:subClassOf rdf:resource="http://ontologies.owo.foundation/owo/core/ontology.rdf#Concept" />
+  </owl:Class>
+  <!-- http://ontologies.owo.foundation/owo/core/ontology.rdf#AbstractPrototype -->
+  <owl:Class rdf:about="http://ontologies.owo.foundation/owo/core/ontology.rdf#AbstractPrototype">
+    <rdfs:subClassOf rdf:resource="http://ontologies.owo.foundation/owo/core/ontology.rdf#Prototype" />
+  </owl:Class>
+  <!-- http://ontologies.owo.foundation/owo/core/ontology.rdf#AdhesiveAgentFusion -->
+  <owl:Class rdf:about="http://ontologies.owo.foundation/owo/core/ontology.rdf#AdhesiveAgentFusion">
+    <rdfs:subClassOf rdf:resource="http://ontologies.owo.foundation/owo/core/ontology.rdf#AdhesiveFusion" />
+  </owl:Class>
+  <!-- http://ontologies.owo.foundation/owo/core/ontology.rdf#AdhesiveFusion -->
+  <owl:Class rdf:about="http://ontologies.owo.foundation/owo/core/ontology.rdf#AdhesiveFusion">
+    <rdfs:subClassOf rdf:resource="http://ontologies.owo.foundation/owo/core/ontology.rdf#Fusion" />
+  </owl:Class>
+  <!-- http://ontologies.owo.foundation/owo/core/ontology.rdf#AgentMix -->
+  <owl:Class rdf:about="http://ontologies.owo.foundation/owo/core/ontology.rdf#AgentMix">
+    <rdfs:subClassOf rdf:resource="http://ontologies.owo.foundation/owo/core/ontology.rdf#SubstrateMix" />
+  </owl:Class>
+  <!-- http://ontologies.owo.foundation/owo/core/ontology.rdf#Assembly -->
+  <owl:Class rdf:about="http://ontologies.owo.foundation/owo/core/ontology.rdf#Assembly">
+    <rdfs:subClassOf rdf:resource="http://ontologies.owo.foundation/owo/core/ontology.rdf#Composition" />
+  </owl:Class>
+  <!-- http://ontologies.owo.foundation/owo/core/ontology.rdf#Composable -->
+  <owl:Class rdf:about="http://ontologies.owo.foundation/owo/core/ontology.rdf#Composable">
+    <rdfs:subClassOf rdf:resource="http://ontologies.owo.foundation/owo/core/ontology.rdf#ObjectFusionCategory" />
+  </owl:Class>
+  <!-- http://ontologies.owo.foundation/owo/core/ontology.rdf#CompositeConstruction -->
+  <owl:Class rdf:about="http://ontologies.owo.foundation/owo/core/ontology.rdf#CompositeConstruction">
+    <rdfs:subClassOf rdf:resource="http://ontologies.owo.foundation/owo/core/ontology.rdf#MediatedAssembly" />
+  </owl:Class>
+  <!-- http://ontologies.owo.foundation/owo/core/ontology.rdf#Composition -->
+  <owl:Class rdf:about="http://ontologies.owo.foundation/owo/core/ontology.rdf#Composition">
+    <rdfs:subClassOf rdf:resource="http://ontologies.owo.foundation/owo/core/ontology.rdf#ObjectFusionCategory" />
+  </owl:Class>
+  <!-- http://ontologies.owo.foundation/owo/core/ontology.rdf#Concept -->
+  <owl:Class rdf:about="http://ontologies.owo.foundation/owo/core/ontology.rdf#Concept">
+    <rdfs:subClassOf rdf:resource="http://ontologies.owo.foundation/owo/core/ontology.rdf#ObjectGenericityCategory" />
+  </owl:Class>
+  <!-- http://ontologies.owo.foundation/owo/core/ontology.rdf#ConcreteConcept -->
+  <owl:Class rdf:about="http://ontologies.owo.foundation/owo/core/ontology.rdf#ConcreteConcept">
+    <rdfs:subClassOf rdf:resource="http://ontologies.owo.foundation/owo/core/ontology.rdf#Concept" />
+  </owl:Class>
+  <!-- http://ontologies.owo.foundation/owo/core/ontology.rdf#ConcretePrototype -->
+  <owl:Class rdf:about="http://ontologies.owo.foundation/owo/core/ontology.rdf#ConcretePrototype">
+    <rdfs:subClassOf rdf:resource="http://ontologies.owo.foundation/owo/core/ontology.rdf#Prototype" />
+  </owl:Class>
+  <!-- http://ontologies.owo.foundation/owo/core/ontology.rdf#Configuration -->
+  <owl:Class rdf:about="http://ontologies.owo.foundation/owo/core/ontology.rdf#Configuration">
+    <rdfs:subClassOf rdf:resource="http://ontologies.owo.foundation/owo/core/ontology.rdf#Assembly" />
+  </owl:Class>
+  <!-- http://ontologies.owo.foundation/owo/core/ontology.rdf#Construction -->
+  <owl:Class rdf:about="http://ontologies.owo.foundation/owo/core/ontology.rdf#Construction">
+    <rdfs:subClassOf rdf:resource="http://ontologies.owo.foundation/owo/core/ontology.rdf#MediatedAssembly" />
+  </owl:Class>
+  <!-- http://ontologies.owo.foundation/owo/core/ontology.rdf#DiscreteComposable -->
+  <owl:Class rdf:about="http://ontologies.owo.foundation/owo/core/ontology.rdf#DiscreteComposable">
+    <rdfs:subClassOf rdf:resource="http://ontologies.owo.foundation/owo/core/ontology.rdf#Composable" />
+  </owl:Class>
+  <!-- http://ontologies.owo.foundation/owo/core/ontology.rdf#FusibleComposable -->
+  <owl:Class rdf:about="http://ontologies.owo.foundation/owo/core/ontology.rdf#FusibleComposable">
+    <rdfs:subClassOf rdf:resource="http://ontologies.owo.foundation/owo/core/ontology.rdf#Composable" />
+  </owl:Class>
+  <!-- http://ontologies.owo.foundation/owo/core/ontology.rdf#Fusion -->
+  <owl:Class rdf:about="http://ontologies.owo.foundation/owo/core/ontology.rdf#Fusion">
+    <rdfs:subClassOf rdf:resource="http://ontologies.owo.foundation/owo/core/ontology.rdf#Composition" />
+  </owl:Class>
+  <!-- http://ontologies.owo.foundation/owo/core/ontology.rdf#HybridComposable -->
+  <owl:Class rdf:about="http://ontologies.owo.foundation/owo/core/ontology.rdf#HybridComposable">
+    <rdfs:subClassOf rdf:resource="http://ontologies.owo.foundation/owo/core/ontology.rdf#Composable" />
+  </owl:Class>
+  <!-- http://ontologies.owo.foundation/owo/core/ontology.rdf#Instance -->
+  <owl:Class rdf:about="http://ontologies.owo.foundation/owo/core/ontology.rdf#Instance">
+    <rdfs:subClassOf rdf:resource="http://ontologies.owo.foundation/owo/core/ontology.rdf#ObjectGenericityCategory" />
+  </owl:Class>
+  <!-- http://ontologies.owo.foundation/owo/core/ontology.rdf#MediatedAssembly -->
+  <owl:Class rdf:about="http://ontologies.owo.foundation/owo/core/ontology.rdf#MediatedAssembly">
+    <rdfs:subClassOf rdf:resource="http://ontologies.owo.foundation/owo/core/ontology.rdf#Assembly" />
+  </owl:Class>
+  <!-- http://ontologies.owo.foundation/owo/core/ontology.rdf#ModifiedInstance -->
+  <owl:Class rdf:about="http://ontologies.owo.foundation/owo/core/ontology.rdf#ModifiedInstance">
+    <rdfs:subClassOf rdf:resource="http://ontologies.owo.foundation/owo/core/ontology.rdf#Instance" />
+  </owl:Class>
+  <!-- http://ontologies.owo.foundation/owo/core/ontology.rdf#ObjectFusionCategory -->
+  <owl:Class rdf:about="http://ontologies.owo.foundation/owo/core/ontology.rdf#ObjectFusionCategory" />
+  <!-- http://ontologies.owo.foundation/owo/core/ontology.rdf#ObjectGenericityCategory -->
+  <owl:Class rdf:about="http://ontologies.owo.foundation/owo/core/ontology.rdf#ObjectGenericityCategory" />
+  <!-- http://ontologies.owo.foundation/owo/core/ontology.rdf#Package -->
+  <owl:Class rdf:about="http://ontologies.owo.foundation/owo/core/ontology.rdf#Package">
+    <rdfs:subClassOf rdf:resource="http://ontologies.owo.foundation/owo/core/ontology.rdf#MediatedAssembly" />
+  </owl:Class>
+  <!-- http://ontologies.owo.foundation/owo/core/ontology.rdf#PerfectInstance -->
+  <owl:Class rdf:about="http://ontologies.owo.foundation/owo/core/ontology.rdf#PerfectInstance">
+    <rdfs:subClassOf rdf:resource="http://ontologies.owo.foundation/owo/core/ontology.rdf#Instance" />
+  </owl:Class>
+  <!-- http://ontologies.owo.foundation/owo/core/ontology.rdf#Prototype -->
+  <owl:Class rdf:about="http://ontologies.owo.foundation/owo/core/ontology.rdf#Prototype">
+    <rdfs:subClassOf rdf:resource="http://ontologies.owo.foundation/owo/core/ontology.rdf#ObjectGenericityCategory" />
+  </owl:Class>
+  <!-- http://ontologies.owo.foundation/owo/core/ontology.rdf#SelfAdhesiveFusion -->
+  <owl:Class rdf:about="http://ontologies.owo.foundation/owo/core/ontology.rdf#SelfAdhesiveFusion">
+    <rdfs:subClassOf rdf:resource="http://ontologies.owo.foundation/owo/core/ontology.rdf#AdhesiveFusion" />
+  </owl:Class>
+  <!-- http://ontologies.owo.foundation/owo/core/ontology.rdf#SelfMix -->
+  <owl:Class rdf:about="http://ontologies.owo.foundation/owo/core/ontology.rdf#SelfMix">
+    <rdfs:subClassOf rdf:resource="http://ontologies.owo.foundation/owo/core/ontology.rdf#SubstrateMix" />
+  </owl:Class>
+  <!-- http://ontologies.owo.foundation/owo/core/ontology.rdf#SimpleConstruction -->
+  <owl:Class rdf:about="http://ontologies.owo.foundation/owo/core/ontology.rdf#SimpleConstruction">
+    <rdfs:subClassOf rdf:resource="http://ontologies.owo.foundation/owo/core/ontology.rdf#MediatedAssembly" />
+  </owl:Class>
+  <!-- http://ontologies.owo.foundation/owo/core/ontology.rdf#StructuredAssembly -->
+  <owl:Class rdf:about="http://ontologies.owo.foundation/owo/core/ontology.rdf#StructuredAssembly">
+    <rdfs:subClassOf rdf:resource="http://ontologies.owo.foundation/owo/core/ontology.rdf#Assembly" />
+  </owl:Class>
+  <!-- http://ontologies.owo.foundation/owo/core/ontology.rdf#SubstrateFusion -->
+  <owl:Class rdf:about="http://ontologies.owo.foundation/owo/core/ontology.rdf#SubstrateFusion">
+    <rdfs:subClassOf rdf:resource="http://ontologies.owo.foundation/owo/core/ontology.rdf#Fusion" />
+  </owl:Class>
+  <!-- http://ontologies.owo.foundation/owo/core/ontology.rdf#SubstrateMix -->
+  <owl:Class rdf:about="http://ontologies.owo.foundation/owo/core/ontology.rdf#SubstrateMix">
+    <rdfs:subClassOf rdf:resource="http://ontologies.owo.foundation/owo/core/ontology.rdf#SubstrateFusion" />
+  </owl:Class>
+  <!-- http://ontologies.owo.foundation/owo/core/ontology.rdf#SurfaceAgentFusion -->
+  <owl:Class rdf:about="http://ontologies.owo.foundation/owo/core/ontology.rdf#SurfaceAgentFusion">
+    <rdfs:subClassOf rdf:resource="http://ontologies.owo.foundation/owo/core/ontology.rdf#SurfaceFusion" />
+  </owl:Class>
+  <!-- http://ontologies.owo.foundation/owo/core/ontology.rdf#SurfaceFusion -->
+  <owl:Class rdf:about="http://ontologies.owo.foundation/owo/core/ontology.rdf#SurfaceFusion">
+    <rdfs:subClassOf rdf:resource="http://ontologies.owo.foundation/owo/core/ontology.rdf#SubstrateFusion" />
+  </owl:Class>
+  <!-- http://ontologies.owo.foundation/owo/core/ontology.rdf#SurfaceSelfFusion -->
+  <owl:Class rdf:about="http://ontologies.owo.foundation/owo/core/ontology.rdf#SurfaceSelfFusion">
+    <rdfs:subClassOf rdf:resource="http://ontologies.owo.foundation/owo/core/ontology.rdf#SurfaceFusion" />
+  </owl:Class>
+  <!-- http://ontologies.owo.foundation/owo/core/ontology.rdf#UnstructuredAssembly -->
+  <owl:Class rdf:about="http://ontologies.owo.foundation/owo/core/ontology.rdf#UnstructuredAssembly">
+    <rdfs:subClassOf rdf:resource="http://ontologies.owo.foundation/owo/core/ontology.rdf#Assembly" />
+  </owl:Class>
+  <!-- http://ontorion.com/unknown.owl/owp#AgglomerativeRelation -->
+  <owl:Class rdf:about="http://ontorion.com/unknown.owl/owp#AgglomerativeRelation">
+    <rdfs:subClassOf rdf:resource="http://www.owo.foundation/owo/core/RelationalObservation" />
+  </owl:Class>
+  <!-- http://ontorion.com/unknown.owl/owp#Analytic -->
+  <owl:Class rdf:about="http://ontorion.com/unknown.owl/owp#Analytic">
+    <rdfs:subClassOf rdf:resource="http://ontorion.com/unknown.owl/owp#AttributiveObservation" />
+  </owl:Class>
+  <!-- http://ontorion.com/unknown.owl/owp#AttributiveObservation -->
+  <owl:Class rdf:about="http://ontorion.com/unknown.owl/owp#AttributiveObservation">
+    <rdfs:subClassOf rdf:resource="http://www.owo.foundation/owo/core/ObjectMomentCategory" />
+  </owl:Class>
+  <!-- http://ontorion.com/unknown.owl/owp#Classification -->
+  <owl:Class rdf:about="http://ontorion.com/unknown.owl/owp#Classification">
+    <rdfs:subClassOf rdf:resource="http://ontorion.com/unknown.owl/owp#AttributiveObservation" />
+  </owl:Class>
+  <!-- http://ontorion.com/unknown.owl/owp#CompositiveRelation -->
+  <owl:Class rdf:about="http://ontorion.com/unknown.owl/owp#CompositiveRelation">
+    <rdfs:subClassOf rdf:resource="http://www.owo.foundation/owo/core/RelationalObservation" />
+  </owl:Class>
+  <!-- http://ontorion.com/unknown.owl/owp#Description -->
+  <owl:Class rdf:about="http://ontorion.com/unknown.owl/owp#Description">
+    <rdfs:subClassOf rdf:resource="http://ontorion.com/unknown.owl/owp#AttributiveObservation" />
+  </owl:Class>
+  <!-- http://ontorion.com/unknown.owl/owp#EdgeValue -->
+  <owl:Class rdf:about="http://ontorion.com/unknown.owl/owp#EdgeValue">
+    <rdfs:subClassOf rdf:resource="http://ontorion.com/unknown.owl/owp#AttributiveObservation" />
+  </owl:Class>
+  <!-- http://ontorion.com/unknown.owl/owp#FunctionDomainTuple -->
+  <owl:Class rdf:about="http://ontorion.com/unknown.owl/owp#FunctionDomainTuple">
+    <rdfs:subClassOf rdf:resource="http://ontorion.com/unknown.owl/owp#AttributiveObservation" />
+  </owl:Class>
+  <!-- http://ontorion.com/unknown.owl/owp#FunctionRangeTuple -->
+  <owl:Class rdf:about="http://ontorion.com/unknown.owl/owp#FunctionRangeTuple">
+    <rdfs:subClassOf rdf:resource="http://ontorion.com/unknown.owl/owp#AttributiveObservation" />
+  </owl:Class>
+  <!-- http://ontorion.com/unknown.owl/owp#Grouping -->
+  <owl:Class rdf:about="http://ontorion.com/unknown.owl/owp#Grouping">
+    <rdfs:subClassOf rdf:resource="http://ontorion.com/unknown.owl/owp#AttributiveObservation" />
+  </owl:Class>
+  <!-- http://ontorion.com/unknown.owl/owp#Identification -->
+  <owl:Class rdf:about="http://ontorion.com/unknown.owl/owp#Identification">
+    <rdfs:subClassOf rdf:resource="http://ontorion.com/unknown.owl/owp#AttributiveObservation" />
+  </owl:Class>
+  <!-- http://ontorion.com/unknown.owl/owp#Measurement -->
+  <owl:Class rdf:about="http://ontorion.com/unknown.owl/owp#Measurement">
+    <rdfs:subClassOf rdf:resource="http://ontorion.com/unknown.owl/owp#AttributiveObservation" />
+  </owl:Class>
+  <!-- http://ontorion.com/unknown.owl/owp#MereoRelation -->
+  <owl:Class rdf:about="http://ontorion.com/unknown.owl/owp#MereoRelation">
+    <rdfs:subClassOf rdf:resource="http://www.owo.foundation/owo/core/RelationalObservation" />
+  </owl:Class>
+  <!-- http://ontorion.com/unknown.owl/owp#MereologicalObservation -->
+  <owl:Class rdf:about="http://ontorion.com/unknown.owl/owp#MereologicalObservation">
+    <rdfs:subClassOf rdf:resource="http://www.owo.foundation/owo/core/MereoRelation" />
+  </owl:Class>
+  <!-- http://ontorion.com/unknown.owl/owp#MereonymicalObservation -->
+  <owl:Class rdf:about="http://ontorion.com/unknown.owl/owp#MereonymicalObservation">
+    <rdfs:subClassOf rdf:resource="http://www.owo.foundation/owo/core/MereoRelation" />
+  </owl:Class>
+  <!-- http://ontorion.com/unknown.owl/owp#MereotopologicalObservation -->
+  <owl:Class rdf:about="http://ontorion.com/unknown.owl/owp#MereotopologicalObservation">
+    <rdfs:subClassOf rdf:resource="http://www.owo.foundation/owo/core/MereoRelation" />
+  </owl:Class>
+  <!-- http://ontorion.com/unknown.owl/owp#Naming -->
+  <owl:Class rdf:about="http://ontorion.com/unknown.owl/owp#Naming">
+    <rdfs:subClassOf rdf:resource="http://ontorion.com/unknown.owl/owp#AttributiveObservation" />
+  </owl:Class>
+  <!-- http://ontorion.com/unknown.owl/owp#OrderRelation -->
+  <owl:Class rdf:about="http://ontorion.com/unknown.owl/owp#OrderRelation">
+    <rdfs:subClassOf rdf:resource="http://www.owo.foundation/owo/core/RelationalObservation" />
+  </owl:Class>
+  <!-- http://ontorion.com/unknown.owl/owp#PointValue -->
+  <owl:Class rdf:about="http://ontorion.com/unknown.owl/owp#PointValue">
+    <rdfs:subClassOf rdf:resource="http://ontorion.com/unknown.owl/owp#AttributiveObservation" />
+  </owl:Class>
+  <!-- http://ontorion.com/unknown.owl/owp#Rating -->
+  <owl:Class rdf:about="http://ontorion.com/unknown.owl/owp#Rating">
+    <rdfs:subClassOf rdf:resource="http://ontorion.com/unknown.owl/owp#AttributiveObservation" />
+  </owl:Class>
+  <!-- http://ontorion.com/unknown.owl/owp#Recording -->
+  <owl:Class rdf:about="http://ontorion.com/unknown.owl/owp#Recording">
+    <rdfs:subClassOf rdf:resource="http://ontorion.com/unknown.owl/owp#AttributiveObservation" />
+  </owl:Class>
+  <!-- http://ontorion.com/unknown.owl/owp#ReductiveRelation -->
+  <owl:Class rdf:about="http://ontorion.com/unknown.owl/owp#ReductiveRelation">
+    <rdfs:subClassOf rdf:resource="http://www.owo.foundation/owo/core/RelationalObservation" />
+  </owl:Class>
+  <!-- http://ontorion.com/unknown.owl/owp#RelationalObservation -->
+  <owl:Class rdf:about="http://ontorion.com/unknown.owl/owp#RelationalObservation">
+    <rdfs:subClassOf rdf:resource="http://www.owo.foundation/owo/core/RelationalObservation" />
+  </owl:Class>
+  <!-- http://ontorion.com/unknown.owl/owp#SemioticRelation -->
+  <owl:Class rdf:about="http://ontorion.com/unknown.owl/owp#SemioticRelation">
+    <rdfs:subClassOf rdf:resource="http://www.owo.foundation/owo/core/RelationalObservation" />
+  </owl:Class>
+  <!-- http://ontorion.com/unknown.owl/owp#Tagging -->
+  <owl:Class rdf:about="http://ontorion.com/unknown.owl/owp#Tagging">
+    <rdfs:subClassOf rdf:resource="http://ontorion.com/unknown.owl/owp#AttributiveObservation" />
+  </owl:Class>
+  <!-- http://ontorion.com/unknown.owl/owp#TransformativeRelation -->
+  <owl:Class rdf:about="http://ontorion.com/unknown.owl/owp#TransformativeRelation">
+    <rdfs:subClassOf rdf:resource="http://www.owo.foundation/owo/core/RelationalObservation" />
+  </owl:Class>
+  <!-- http://ontorion.com/unknown.owl/owp#ValueTuple -->
+  <owl:Class rdf:about="http://ontorion.com/unknown.owl/owp#ValueTuple">
+    <rdfs:subClassOf rdf:resource="http://ontorion.com/unknown.owl/owp#AttributiveObservation" />
+  </owl:Class>
+  <!-- http://www.owo.foundation/owo/core/AbstractEvent -->
+  <owl:Class rdf:about="http://www.owo.foundation/owo/core/AbstractEvent">
+    <rdfs:subClassOf rdf:resource="http://www.owo.foundation/owo/core/Event" />
+  </owl:Class>
+  <!-- http://www.owo.foundation/owo/core/AbstractLeftOpenPeriod -->
+  <owl:Class rdf:about="http://www.owo.foundation/owo/core/AbstractLeftOpenPeriod">
+    <rdfs:subClassOf rdf:resource="http://www.owo.foundation/owo/core/LeftOpenPeriod" />
+  </owl:Class>
+  <!-- http://www.owo.foundation/owo/core/AbstractLeftTemporalBoundary -->
+  <owl:Class rdf:about="http://www.owo.foundation/owo/core/AbstractLeftTemporalBoundary">
+    <rdfs:subClassOf rdf:resource="http://www.owo.foundation/owo/core/LeftTemporalBoundary" />
+  </owl:Class>
+  <!-- http://www.owo.foundation/owo/core/AbstractRightOpenPeriod -->
+  <owl:Class rdf:about="http://www.owo.foundation/owo/core/AbstractRightOpenPeriod">
+    <rdfs:subClassOf rdf:resource="http://www.owo.foundation/owo/core/RightOpenPeriod" />
+  </owl:Class>
+  <!-- http://www.owo.foundation/owo/core/AbstractRightTemporalBoundary -->
+  <owl:Class rdf:about="http://www.owo.foundation/owo/core/AbstractRightTemporalBoundary">
+    <rdfs:subClassOf rdf:resource="http://www.owo.foundation/owo/core/RightTemporalBoundary" />
+  </owl:Class>
+  <!-- http://www.owo.foundation/owo/core/AssertedFalse -->
+  <owl:Class rdf:about="http://www.owo.foundation/owo/core/AssertedFalse">
+    <rdfs:subClassOf rdf:resource="http://www.owo.foundation/owo/core/AuthenticationAssertionValue" />
+  </owl:Class>
+  <!-- http://www.owo.foundation/owo/core/AssertedTrue -->
+  <owl:Class rdf:about="http://www.owo.foundation/owo/core/AssertedTrue">
+    <rdfs:subClassOf rdf:resource="http://www.owo.foundation/owo/core/AuthenticationAssertionValue" />
+  </owl:Class>
+  <!-- http://www.owo.foundation/owo/core/AtomicUniverse -->
+  <owl:Class rdf:about="http://www.owo.foundation/owo/core/AtomicUniverse">
+    <rdfs:subClassOf rdf:resource="http://www.owo.foundation/owo/core/PhysicalUniverse" />
+  </owl:Class>
+  <!-- http://www.owo.foundation/owo/core/Attribute -->
+  <owl:Class rdf:about="http://www.owo.foundation/owo/core/Attribute">
+    <rdfs:subClassOf rdf:resource="http://www.owo.foundation/owo/core/ConstructionalObject" />
+  </owl:Class>
+  <!-- http://www.owo.foundation/owo/core/Authenticable -->
+  <owl:Class rdf:about="http://www.owo.foundation/owo/core/Authenticable">
+    <rdfs:subClassOf rdf:resource="http://www.owo.foundation/owo/core/ObjectAuthenticationCategory" />
+  </owl:Class>
+  <!-- http://www.owo.foundation/owo/core/AuthenticableByAssertion -->
+  <owl:Class rdf:about="http://www.owo.foundation/owo/core/AuthenticableByAssertion">
+    <rdfs:subClassOf rdf:resource="http://www.owo.foundation/owo/core/Authenticable" />
+  </owl:Class>
+  <!-- http://www.owo.foundation/owo/core/AuthenticableByProof -->
+  <owl:Class rdf:about="http://www.owo.foundation/owo/core/AuthenticableByProof">
+    <rdfs:subClassOf rdf:resource="http://www.owo.foundation/owo/core/Authenticable" />
+  </owl:Class>
+  <!-- http://www.owo.foundation/owo/core/Authentication -->
+  <owl:Class rdf:about="http://www.owo.foundation/owo/core/Authentication">
+    <rdfs:subClassOf rdf:resource="http://www.owo.foundation/owo/core/ObjectAuthenticationCategory" />
+  </owl:Class>
+  <!-- http://www.owo.foundation/owo/core/AuthenticationAssertion -->
+  <owl:Class rdf:about="http://www.owo.foundation/owo/core/AuthenticationAssertion">
+    <rdfs:subClassOf rdf:resource="http://www.owo.foundation/owo/core/Authentication" />
+  </owl:Class>
+  <!-- http://www.owo.foundation/owo/core/AuthenticationAssertionRule -->
+  <owl:Class rdf:about="http://www.owo.foundation/owo/core/AuthenticationAssertionRule">
+    <rdfs:subClassOf rdf:resource="http://www.owo.foundation/owo/core/AuthenticationAssertion" />
+  </owl:Class>
+  <!-- http://www.owo.foundation/owo/core/AuthenticationAssertionValue -->
+  <owl:Class rdf:about="http://www.owo.foundation/owo/core/AuthenticationAssertionValue">
+    <rdfs:subClassOf rdf:resource="http://www.owo.foundation/owo/core/AuthenticationAssertion" />
+  </owl:Class>
+  <!-- http://www.owo.foundation/owo/core/AuthenticationEvidence -->
+  <owl:Class rdf:about="http://www.owo.foundation/owo/core/AuthenticationEvidence">
+    <rdfs:subClassOf rdf:resource="http://www.owo.foundation/owo/core/Authentication" />
+  </owl:Class>
+  <!-- http://www.owo.foundation/owo/core/BodyUniverse -->
+  <owl:Class rdf:about="http://www.owo.foundation/owo/core/BodyUniverse">
+    <rdfs:subClassOf rdf:resource="http://www.owo.foundation/owo/core/PhysicalUniverse" />
+  </owl:Class>
+  <!-- http://www.owo.foundation/owo/core/BoundaryEdge -->
+  <owl:Class rdf:about="http://www.owo.foundation/owo/core/BoundaryEdge">
+    <rdfs:subClassOf rdf:resource="http://www.owo.foundation/owo/core/SpatialBoundary" />
+  </owl:Class>
+  <!-- http://www.owo.foundation/owo/core/BoundaryFace -->
+  <owl:Class rdf:about="http://www.owo.foundation/owo/core/BoundaryFace">
+    <rdfs:subClassOf rdf:resource="http://www.owo.foundation/owo/core/SpatialBoundary" />
+  </owl:Class>
+  <!-- http://www.owo.foundation/owo/core/BoundaryVertex -->
+  <owl:Class rdf:about="http://www.owo.foundation/owo/core/BoundaryVertex">
+    <rdfs:subClassOf rdf:resource="http://www.owo.foundation/owo/core/SpatialBoundary" />
+  </owl:Class>
+  <!-- http://www.owo.foundation/owo/core/ClosedBody -->
+  <owl:Class rdf:about="http://www.owo.foundation/owo/core/ClosedBody">
+    <rdfs:subClassOf rdf:resource="http://www.owo.foundation/owo/core/SpatialBody" />
+  </owl:Class>
+  <!-- http://www.owo.foundation/owo/core/ClosedDirection -->
+  <owl:Class rdf:about="http://www.owo.foundation/owo/core/ClosedDirection">
+    <rdfs:subClassOf rdf:resource="http://www.owo.foundation/owo/core/SpatialDirection" />
+  </owl:Class>
+  <!-- http://www.owo.foundation/owo/core/ClosedLeftSpatialPoint -->
+  <owl:Class rdf:about="http://www.owo.foundation/owo/core/ClosedLeftSpatialPoint">
+    <rdfs:subClassOf rdf:resource="http://www.owo.foundation/owo/core/LeftSpatialPoint" />
+  </owl:Class>
+  <!-- http://www.owo.foundation/owo/core/ClosedLeftTemporalBoundary -->
+  <owl:Class rdf:about="http://www.owo.foundation/owo/core/ClosedLeftTemporalBoundary">
+    <rdfs:subClassOf rdf:resource="http://www.owo.foundation/owo/core/LeftTemporalBoundary" />
+  </owl:Class>
+  <!-- http://www.owo.foundation/owo/core/ClosedObject -->
+  <owl:Class rdf:about="http://www.owo.foundation/owo/core/ClosedObject">
+    <rdfs:subClassOf rdf:resource="http://www.owo.foundation/owo/core/EndurantObservable" />
+  </owl:Class>
+  <!-- http://www.owo.foundation/owo/core/ClosedPeriod -->
+  <owl:Class rdf:about="http://www.owo.foundation/owo/core/ClosedPeriod">
+    <rdfs:subClassOf rdf:resource="http://www.owo.foundation/owo/core/Period" />
+  </owl:Class>
+  <!-- http://www.owo.foundation/owo/core/ClosedRightSpatialPoint -->
+  <owl:Class rdf:about="http://www.owo.foundation/owo/core/ClosedRightSpatialPoint">
+    <rdfs:subClassOf rdf:resource="http://www.owo.foundation/owo/core/RightSpatialPoint" />
+  </owl:Class>
+  <!-- http://www.owo.foundation/owo/core/ClosedRightTemporalBoundary -->
+  <owl:Class rdf:about="http://www.owo.foundation/owo/core/ClosedRightTemporalBoundary">
+    <rdfs:subClassOf rdf:resource="http://www.owo.foundation/owo/core/RightTemporalBoundary" />
+  </owl:Class>
+  <!-- http://www.owo.foundation/owo/core/CompleteEventHistory -->
+  <owl:Class rdf:about="http://www.owo.foundation/owo/core/CompleteEventHistory">
+    <rdfs:subClassOf rdf:resource="http://www.owo.foundation/owo/core/EventHistory" />
+  </owl:Class>
+  <!-- http://www.owo.foundation/owo/core/CompletePeriodTrace -->
+  <owl:Class rdf:about="http://www.owo.foundation/owo/core/CompletePeriodTrace">
+    <rdfs:subClassOf rdf:resource="http://www.owo.foundation/owo/core/PeriodTrace" />
+  </owl:Class>
+  <!-- http://www.owo.foundation/owo/core/ComplexEvidence -->
+  <owl:Class rdf:about="http://www.owo.foundation/owo/core/ComplexEvidence">
+    <rdfs:subClassOf rdf:resource="http://www.owo.foundation/owo/core/AuthenticationEvidence" />
+  </owl:Class>
+  <!-- http://www.owo.foundation/owo/core/CompositeBodyUniverse -->
+  <owl:Class rdf:about="http://www.owo.foundation/owo/core/CompositeBodyUniverse">
+    <rdfs:subClassOf rdf:resource="http://www.owo.foundation/owo/core/BodyUniverse" />
+  </owl:Class>
+  <!-- http://www.owo.foundation/owo/core/CompositePeriodTrace -->
+  <owl:Class rdf:about="http://www.owo.foundation/owo/core/CompositePeriodTrace">
+    <rdfs:subClassOf rdf:resource="http://www.owo.foundation/owo/core/PeriodTrace" />
+  </owl:Class>
+  <!-- http://www.owo.foundation/owo/core/CompoundMaterialUniverse -->
+  <owl:Class rdf:about="http://www.owo.foundation/owo/core/CompoundMaterialUniverse">
+    <rdfs:subClassOf rdf:resource="http://www.owo.foundation/owo/core/MaterialUniverse" />
+  </owl:Class>
+  <!-- http://www.owo.foundation/owo/core/ConstructionalObject -->
+  <owl:Class rdf:about="http://www.owo.foundation/owo/core/ConstructionalObject">
+    <rdfs:subClassOf rdf:resource="http://www.owo.foundation/owo/core/Object" />
+  </owl:Class>
+  <!-- http://www.owo.foundation/owo/core/ContinuousDensityWorld -->
+  <owl:Class rdf:about="http://www.owo.foundation/owo/core/ContinuousDensityWorld">
+    <rdfs:subClassOf rdf:resource="http://www.owo.foundation/owo/core/ObjectDensityCategory" />
+  </owl:Class>
+  <!-- http://www.owo.foundation/owo/core/CrispObservation -->
+  <owl:Class rdf:about="http://www.owo.foundation/owo/core/CrispObservation">
+    <rdfs:subClassOf rdf:resource="http://www.owo.foundation/owo/core/ObjectPrecisionCategory" />
+  </owl:Class>
+  <!-- http://www.owo.foundation/owo/core/DirectSource -->
+  <owl:Class rdf:about="http://www.owo.foundation/owo/core/DirectSource">
+    <rdfs:subClassOf rdf:resource="http://www.owo.foundation/owo/core/SourceAuthority" />
+  </owl:Class>
+  <!-- http://www.owo.foundation/owo/core/DiscreteDensityWorld -->
+  <owl:Class rdf:about="http://www.owo.foundation/owo/core/DiscreteDensityWorld">
+    <rdfs:subClassOf rdf:resource="http://www.owo.foundation/owo/core/ObjectDensityCategory" />
+  </owl:Class>
+  <!-- http://www.owo.foundation/owo/core/DistanceMeasure -->
+  <owl:Class rdf:about="http://www.owo.foundation/owo/core/DistanceMeasure">
+    <rdfs:subClassOf rdf:resource="http://www.owo.foundation/owo/core/SpatialRelationship" />
+  </owl:Class>
+  <!-- http://www.owo.foundation/owo/core/ElementalUniverse -->
+  <owl:Class rdf:about="http://www.owo.foundation/owo/core/ElementalUniverse">
+    <rdfs:subClassOf rdf:resource="http://www.owo.foundation/owo/core/AtomicUniverse" />
+  </owl:Class>
+  <!-- http://www.owo.foundation/owo/core/EmpiricallyAuthenticable -->
+  <owl:Class rdf:about="http://www.owo.foundation/owo/core/EmpiricallyAuthenticable">
+    <rdfs:subClassOf rdf:resource="http://www.owo.foundation/owo/core/Authenticable" />
+  </owl:Class>
+  <!-- http://www.owo.foundation/owo/core/EmptyBody -->
+  <owl:Class rdf:about="http://www.owo.foundation/owo/core/EmptyBody">
+    <rdfs:subClassOf rdf:resource="http://www.owo.foundation/owo/core/OpenBody" />
+  </owl:Class>
+  <!-- http://www.owo.foundation/owo/core/EndurantObservable -->
+  <owl:Class rdf:about="http://www.owo.foundation/owo/core/EndurantObservable">
+    <rdfs:subClassOf rdf:resource="http://www.owo.foundation/owo/core/ObjectTemporalExtentCategory" />
+  </owl:Class>
+  <!-- http://www.owo.foundation/owo/core/EnergeticField -->
+  <owl:Class rdf:about="http://www.owo.foundation/owo/core/EnergeticField">
+    <rdfs:subClassOf rdf:resource="http://www.owo.foundation/owo/core/EnergeticUniverse" />
+  </owl:Class>
+  <!-- http://www.owo.foundation/owo/core/EnergeticPotential -->
+  <owl:Class rdf:about="http://www.owo.foundation/owo/core/EnergeticPotential">
+    <rdfs:subClassOf rdf:resource="http://www.owo.foundation/owo/core/EnergeticUniverse" />
+  </owl:Class>
+  <!-- http://www.owo.foundation/owo/core/EnergeticUniverse -->
+  <owl:Class rdf:about="http://www.owo.foundation/owo/core/EnergeticUniverse">
+    <rdfs:subClassOf rdf:resource="http://www.owo.foundation/owo/core/PhysicalUniverse" />
+  </owl:Class>
+  <!-- http://www.owo.foundation/owo/core/EnergeticWave -->
+  <owl:Class rdf:about="http://www.owo.foundation/owo/core/EnergeticWave">
+    <rdfs:subClassOf rdf:resource="http://www.owo.foundation/owo/core/EnergeticUniverse" />
+  </owl:Class>
+  <!-- http://www.owo.foundation/owo/core/Entity -->
+  <owl:Class rdf:about="http://www.owo.foundation/owo/core/Entity">
+    <owl:equivalentClass rdf:resource="http://www.w3.org/2002/07/owl#Thing" />
+  </owl:Class>
+  <!-- http://www.owo.foundation/owo/core/Event -->
+  <owl:Class rdf:about="http://www.owo.foundation/owo/core/Event">
+    <rdfs:subClassOf rdf:resource="http://www.owo.foundation/owo/core/PerdurantObservation" />
+  </owl:Class>
+  <!-- http://www.owo.foundation/owo/core/EventHistory -->
+  <owl:Class rdf:about="http://www.owo.foundation/owo/core/EventHistory">
+    <rdfs:subClassOf rdf:resource="http://www.owo.foundation/owo/core/Event" />
+  </owl:Class>
+  <!-- http://www.owo.foundation/owo/core/ExperientialObject -->
+  <owl:Class rdf:about="http://www.owo.foundation/owo/core/ExperientialObject">
+    <rdfs:subClassOf rdf:resource="http://www.owo.foundation/owo/core/ConstructionalObject" />
+  </owl:Class>
+  <!-- http://www.owo.foundation/owo/core/FiatPeriod -->
+  <owl:Class rdf:about="http://www.owo.foundation/owo/core/FiatPeriod">
+    <rdfs:subClassOf rdf:resource="http://www.owo.foundation/owo/core/Period" />
+  </owl:Class>
+  <!-- http://www.owo.foundation/owo/core/FiatSpatialPoint -->
+  <owl:Class rdf:about="http://www.owo.foundation/owo/core/FiatSpatialPoint">
+    <rdfs:subClassOf rdf:resource="http://www.owo.foundation/owo/core/SpatialPoint" />
+  </owl:Class>
+  <!-- http://www.owo.foundation/owo/core/FiniteDiscreteDensityWorld -->
+  <owl:Class rdf:about="http://www.owo.foundation/owo/core/FiniteDiscreteDensityWorld">
+    <rdfs:subClassOf rdf:resource="http://www.owo.foundation/owo/core/DiscreteDensityWorld" />
+  </owl:Class>
+  <!-- http://www.owo.foundation/owo/core/FiniteParallelUniverseWorld -->
+  <owl:Class rdf:about="http://www.owo.foundation/owo/core/FiniteParallelUniverseWorld">
+    <rdfs:subClassOf rdf:resource="http://www.owo.foundation/owo/core/FiniteDiscreteDensityWorld" />
+  </owl:Class>
+  <!-- http://www.owo.foundation/owo/core/GasplasmaBody -->
+  <owl:Class rdf:about="http://www.owo.foundation/owo/core/GasplasmaBody">
+    <rdfs:subClassOf rdf:resource="http://www.owo.foundation/owo/core/OpenBody" />
+  </owl:Class>
+  <!-- http://www.owo.foundation/owo/core/HomogenousMaterialUniverse -->
+  <owl:Class rdf:about="http://www.owo.foundation/owo/core/HomogenousMaterialUniverse">
+    <rdfs:subClassOf rdf:resource="http://www.owo.foundation/owo/core/MaterialUniverse" />
+  </owl:Class>
+  <!-- http://www.owo.foundation/owo/core/InfiniteParallelUniverseWorld -->
+  <owl:Class rdf:about="http://www.owo.foundation/owo/core/InfiniteParallelUniverseWorld">
+    <rdfs:subClassOf rdf:resource="http://www.owo.foundation/owo/core/DiscreteDensityWorld" />
+  </owl:Class>
+  <!-- http://www.owo.foundation/owo/core/InfluentialClosedObject -->
+  <owl:Class rdf:about="http://www.owo.foundation/owo/core/InfluentialClosedObject">
+    <rdfs:subClassOf rdf:resource="http://www.owo.foundation/owo/core/ClosedObject" />
+  </owl:Class>
+  <!-- http://www.owo.foundation/owo/core/InfluentialOpenObject -->
+  <owl:Class rdf:about="http://www.owo.foundation/owo/core/InfluentialOpenObject">
+    <rdfs:subClassOf rdf:resource="http://www.owo.foundation/owo/core/OpenObject" />
+  </owl:Class>
+  <!-- http://www.owo.foundation/owo/core/IsolatedClosedObject -->
+  <owl:Class rdf:about="http://www.owo.foundation/owo/core/IsolatedClosedObject">
+    <rdfs:subClassOf rdf:resource="http://www.owo.foundation/owo/core/ClosedObject" />
+  </owl:Class>
+  <!-- http://www.owo.foundation/owo/core/IsolatedOpenObject -->
+  <owl:Class rdf:about="http://www.owo.foundation/owo/core/IsolatedOpenObject">
+    <rdfs:subClassOf rdf:resource="http://www.owo.foundation/owo/core/OpenObject" />
+  </owl:Class>
+  <!-- http://www.owo.foundation/owo/core/LeftOpenAxis -->
+  <owl:Class rdf:about="http://www.owo.foundation/owo/core/LeftOpenAxis">
+    <rdfs:subClassOf rdf:resource="http://www.owo.foundation/owo/core/SpatialAxis" />
+  </owl:Class>
+  <!-- http://www.owo.foundation/owo/core/LeftOpenDirection -->
+  <owl:Class rdf:about="http://www.owo.foundation/owo/core/LeftOpenDirection">
+    <rdfs:subClassOf rdf:resource="http://www.owo.foundation/owo/core/OpenDirection" />
+  </owl:Class>
+  <!-- http://www.owo.foundation/owo/core/LeftOpenPeriod -->
+  <owl:Class rdf:about="http://www.owo.foundation/owo/core/LeftOpenPeriod">
+    <rdfs:subClassOf rdf:resource="http://www.owo.foundation/owo/core/Period" />
+  </owl:Class>
+  <!-- http://www.owo.foundation/owo/core/LeftSpatialPoint -->
+  <owl:Class rdf:about="http://www.owo.foundation/owo/core/LeftSpatialPoint">
+    <rdfs:subClassOf rdf:resource="http://www.owo.foundation/owo/core/SpatialPoint" />
+  </owl:Class>
+  <!-- http://www.owo.foundation/owo/core/LeftTemporalBoundary -->
+  <owl:Class rdf:about="http://www.owo.foundation/owo/core/LeftTemporalBoundary">
+    <rdfs:subClassOf rdf:resource="http://www.owo.foundation/owo/core/TemporalBoundary" />
+  </owl:Class>
+  <!-- http://www.owo.foundation/owo/core/LeftwardDirection -->
+  <owl:Class rdf:about="http://www.owo.foundation/owo/core/LeftwardDirection">
+    <rdfs:subClassOf rdf:resource="http://www.owo.foundation/owo/core/ClosedDirection" />
+  </owl:Class>
+  <!-- http://www.owo.foundation/owo/core/LiquidBody -->
+  <owl:Class rdf:about="http://www.owo.foundation/owo/core/LiquidBody">
+    <rdfs:subClassOf rdf:resource="http://www.owo.foundation/owo/core/OpenBody" />
+  </owl:Class>
+  <!-- http://www.owo.foundation/owo/core/MaterialUniverse -->
+  <owl:Class rdf:about="http://www.owo.foundation/owo/core/MaterialUniverse">
+    <rdfs:subClassOf rdf:resource="http://www.owo.foundation/owo/core/PhysicalUniverse" />
+  </owl:Class>
+  <!-- http://www.owo.foundation/owo/core/MentalUniverse -->
+  <owl:Class rdf:about="http://www.owo.foundation/owo/core/MentalUniverse">
+    <rdfs:subClassOf rdf:resource="http://www.owo.foundation/owo/core/ObjectGroundingCategory" />
+  </owl:Class>
+  <!-- http://www.owo.foundation/owo/core/MereoRelation -->
+  <owl:Class rdf:about="http://www.owo.foundation/owo/core/MereoRelation" />
+  <!-- http://www.owo.foundation/owo/core/MolecularUniverse -->
+  <owl:Class rdf:about="http://www.owo.foundation/owo/core/MolecularUniverse">
+    <rdfs:subClassOf rdf:resource="http://www.owo.foundation/owo/core/AtomicUniverse" />
+  </owl:Class>
+  <!-- http://www.owo.foundation/owo/core/MonolithicBodyUniverse -->
+  <owl:Class rdf:about="http://www.owo.foundation/owo/core/MonolithicBodyUniverse">
+    <rdfs:subClassOf rdf:resource="http://www.owo.foundation/owo/core/BodyUniverse" />
+  </owl:Class>
+  <!-- http://www.owo.foundation/owo/core/NegativeEvidence -->
+  <owl:Class rdf:about="http://www.owo.foundation/owo/core/NegativeEvidence">
+    <rdfs:subClassOf rdf:resource="http://www.owo.foundation/owo/core/AuthenticationEvidence" />
+  </owl:Class>
+  <!-- http://www.owo.foundation/owo/core/Object -->
+  <owl:Class rdf:about="http://www.owo.foundation/owo/core/Object" />
+  <!-- http://www.owo.foundation/owo/core/ObjectAuthenticationCategory -->
+  <owl:Class rdf:about="http://www.owo.foundation/owo/core/ObjectAuthenticationCategory">
+    <rdfs:subClassOf rdf:resource="http://www.owo.foundation/owo/core/Entity" />
+  </owl:Class>
+  <!-- http://www.owo.foundation/owo/core/ObjectAuthorityCategory -->
+  <owl:Class rdf:about="http://www.owo.foundation/owo/core/ObjectAuthorityCategory">
+    <rdfs:subClassOf rdf:resource="http://www.owo.foundation/owo/core/Entity" />
+  </owl:Class>
+  <!-- http://www.owo.foundation/owo/core/ObjectClass -->
+  <owl:Class rdf:about="http://www.owo.foundation/owo/core/ObjectClass">
+    <rdfs:subClassOf rdf:resource="http://www.owo.foundation/owo/core/Entity" />
+  </owl:Class>
+  <!-- http://www.owo.foundation/owo/core/ObjectDensityCategory -->
+  <owl:Class rdf:about="http://www.owo.foundation/owo/core/ObjectDensityCategory">
+    <rdfs:subClassOf rdf:resource="http://www.owo.foundation/owo/core/Entity" />
+  </owl:Class>
+  <!-- http://www.owo.foundation/owo/core/ObjectFusionCategory -->
+  <owl:Class rdf:about="http://www.owo.foundation/owo/core/ObjectFusionCategory">
+    <rdfs:subClassOf rdf:resource="http://www.owo.foundation/owo/core/Entity" />
+  </owl:Class>
+  <!-- http://www.owo.foundation/owo/core/ObjectGenericityCategory -->
+  <owl:Class rdf:about="http://www.owo.foundation/owo/core/ObjectGenericityCategory">
+    <rdfs:subClassOf rdf:resource="http://www.owo.foundation/owo/core/Entity" />
+  </owl:Class>
+  <!-- http://www.owo.foundation/owo/core/ObjectGroundingCategory -->
+  <owl:Class rdf:about="http://www.owo.foundation/owo/core/ObjectGroundingCategory">
+    <rdfs:subClassOf rdf:resource="http://www.owo.foundation/owo/core/Entity" />
+  </owl:Class>
+  <!-- http://www.owo.foundation/owo/core/ObjectMomentCategory -->
+  <owl:Class rdf:about="http://www.owo.foundation/owo/core/ObjectMomentCategory">
+    <rdfs:subClassOf rdf:resource="http://www.owo.foundation/owo/core/Entity" />
+  </owl:Class>
+  <!-- http://www.owo.foundation/owo/core/ObjectPrecisionCategory -->
+  <owl:Class rdf:about="http://www.owo.foundation/owo/core/ObjectPrecisionCategory">
+    <rdfs:subClassOf rdf:resource="http://www.owo.foundation/owo/core/Entity" />
+  </owl:Class>
+  <!-- http://www.owo.foundation/owo/core/ObjectSpatialExtentCategory -->
+  <owl:Class rdf:about="http://www.owo.foundation/owo/core/ObjectSpatialExtentCategory">
+    <rdfs:subClassOf rdf:resource="http://www.owo.foundation/owo/core/Entity" />
+  </owl:Class>
+  <!-- http://www.owo.foundation/owo/core/ObjectSymbolicCategory -->
+  <owl:Class rdf:about="http://www.owo.foundation/owo/core/ObjectSymbolicCategory">
+    <rdfs:subClassOf rdf:resource="http://www.owo.foundation/owo/core/Entity" />
+  </owl:Class>
+  <!-- http://www.owo.foundation/owo/core/ObjectTemporalExtentCategory -->
+  <owl:Class rdf:about="http://www.owo.foundation/owo/core/ObjectTemporalExtentCategory">
+    <rdfs:subClassOf rdf:resource="http://www.owo.foundation/owo/core/Entity" />
+  </owl:Class>
+  <!-- http://www.owo.foundation/owo/core/OpaqueInfluentialClosedObject -->
+  <owl:Class rdf:about="http://www.owo.foundation/owo/core/OpaqueInfluentialClosedObject">
+    <rdfs:subClassOf rdf:resource="http://www.owo.foundation/owo/core/InfluentialClosedObject" />
+  </owl:Class>
+  <!-- http://www.owo.foundation/owo/core/OpaqueInfluentialOpenObject -->
+  <owl:Class rdf:about="http://www.owo.foundation/owo/core/OpaqueInfluentialOpenObject">
+    <rdfs:subClassOf rdf:resource="http://www.owo.foundation/owo/core/InfluentialOpenObject" />
+  </owl:Class>
+  <!-- http://www.owo.foundation/owo/core/OpaqueIsolatedClosedObject -->
+  <owl:Class rdf:about="http://www.owo.foundation/owo/core/OpaqueIsolatedClosedObject">
+    <rdfs:subClassOf rdf:resource="http://www.owo.foundation/owo/core/IsolatedClosedObject" />
+  </owl:Class>
+  <!-- http://www.owo.foundation/owo/core/OpaqueIsolatedOpenObject -->
+  <owl:Class rdf:about="http://www.owo.foundation/owo/core/OpaqueIsolatedOpenObject">
+    <rdfs:subClassOf rdf:resource="http://www.owo.foundation/owo/core/IsolatedOpenObject" />
+  </owl:Class>
+  <!-- http://www.owo.foundation/owo/core/OpenAxis -->
+  <owl:Class rdf:about="http://www.owo.foundation/owo/core/OpenAxis">
+    <rdfs:subClassOf rdf:resource="http://www.owo.foundation/owo/core/SpatialAxis" />
+  </owl:Class>
+  <!-- http://www.owo.foundation/owo/core/OpenBody -->
+  <owl:Class rdf:about="http://www.owo.foundation/owo/core/OpenBody">
+    <rdfs:subClassOf rdf:resource="http://www.owo.foundation/owo/core/SpatialBody" />
+  </owl:Class>
+  <!-- http://www.owo.foundation/owo/core/OpenDirection -->
+  <owl:Class rdf:about="http://www.owo.foundation/owo/core/OpenDirection">
+    <rdfs:subClassOf rdf:resource="http://www.owo.foundation/owo/core/SpatialDirection" />
+  </owl:Class>
+  <!-- http://www.owo.foundation/owo/core/OpenLeftSpatialPoint -->
+  <owl:Class rdf:about="http://www.owo.foundation/owo/core/OpenLeftSpatialPoint">
+    <rdfs:subClassOf rdf:resource="http://www.owo.foundation/owo/core/LeftSpatialPoint" />
+  </owl:Class>
+  <!-- http://www.owo.foundation/owo/core/OpenLeftTemporalBoundary -->
+  <owl:Class rdf:about="http://www.owo.foundation/owo/core/OpenLeftTemporalBoundary">
+    <rdfs:subClassOf rdf:resource="http://www.owo.foundation/owo/core/LeftTemporalBoundary" />
+  </owl:Class>
+  <!-- http://www.owo.foundation/owo/core/OpenObject -->
+  <owl:Class rdf:about="http://www.owo.foundation/owo/core/OpenObject">
+    <rdfs:subClassOf rdf:resource="http://www.owo.foundation/owo/core/EndurantObservable" />
+  </owl:Class>
+  <!-- http://www.owo.foundation/owo/core/OpenRightSpatialPoint -->
+  <owl:Class rdf:about="http://www.owo.foundation/owo/core/OpenRightSpatialPoint">
+    <rdfs:subClassOf rdf:resource="http://www.owo.foundation/owo/core/RightSpatialPoint" />
+  </owl:Class>
+  <!-- http://www.owo.foundation/owo/core/OpenRightTemporalBoundary -->
+  <owl:Class rdf:about="http://www.owo.foundation/owo/core/OpenRightTemporalBoundary">
+    <rdfs:subClassOf rdf:resource="http://www.owo.foundation/owo/core/RightTemporalBoundary" />
+  </owl:Class>
+  <!-- http://www.owo.foundation/owo/core/Origin -->
+  <owl:Class rdf:about="http://www.owo.foundation/owo/core/Origin">
+    <rdfs:subClassOf rdf:resource="http://www.owo.foundation/owo/core/SpatialRelationship" />
+  </owl:Class>
+  <!-- http://www.owo.foundation/owo/core/PartialEventHistory -->
+  <owl:Class rdf:about="http://www.owo.foundation/owo/core/PartialEventHistory">
+    <rdfs:subClassOf rdf:resource="http://www.owo.foundation/owo/core/EventHistory" />
+  </owl:Class>
+  <!-- http://www.owo.foundation/owo/core/PartialPeriodTrace -->
+  <owl:Class rdf:about="http://www.owo.foundation/owo/core/PartialPeriodTrace">
+    <rdfs:subClassOf rdf:resource="http://www.owo.foundation/owo/core/PeriodTrace" />
+  </owl:Class>
+  <!-- http://www.owo.foundation/owo/core/ParticleUniverse -->
+  <owl:Class rdf:about="http://www.owo.foundation/owo/core/ParticleUniverse">
+    <rdfs:subClassOf rdf:resource="http://www.owo.foundation/owo/core/AtomicUniverse" />
+  </owl:Class>
+  <!-- http://www.owo.foundation/owo/core/PerdurantObservation -->
+  <owl:Class rdf:about="http://www.owo.foundation/owo/core/PerdurantObservation">
+    <rdfs:subClassOf rdf:resource="http://www.owo.foundation/owo/core/ObjectTemporalExtentCategory" />
+  </owl:Class>
+  <!-- http://www.owo.foundation/owo/core/Period -->
+  <owl:Class rdf:about="http://www.owo.foundation/owo/core/Period">
+    <rdfs:subClassOf rdf:resource="http://www.owo.foundation/owo/core/PerdurantObservation" />
+  </owl:Class>
+  <!-- http://www.owo.foundation/owo/core/PeriodTrace -->
+  <owl:Class rdf:about="http://www.owo.foundation/owo/core/PeriodTrace">
+    <rdfs:subClassOf rdf:resource="http://www.owo.foundation/owo/core/Period" />
+  </owl:Class>
+  <!-- http://www.owo.foundation/owo/core/Person -->
+  <owl:Class rdf:about="http://www.owo.foundation/owo/core/Person">
+    <rdfs:subClassOf rdf:resource="http://www.owo.foundation/owo/core/ExperientialObject" />
+  </owl:Class>
+  <!-- http://www.owo.foundation/owo/core/PersonalUniverse -->
+  <owl:Class rdf:about="http://www.owo.foundation/owo/core/PersonalUniverse">
+    <rdfs:subClassOf rdf:resource="http://www.owo.foundation/owo/core/MentalUniverse" />
+  </owl:Class>
+  <!-- http://www.owo.foundation/owo/core/PhysicalUniverse -->
+  <owl:Class rdf:about="http://www.owo.foundation/owo/core/PhysicalUniverse">
+    <rdfs:subClassOf rdf:resource="http://www.owo.foundation/owo/core/ObjectGroundingCategory" />
+  </owl:Class>
+  <!-- http://www.owo.foundation/owo/core/Place -->
+  <owl:Class rdf:about="http://www.owo.foundation/owo/core/Place">
+    <rdfs:subClassOf rdf:resource="http://www.owo.foundation/owo/core/ExperientialObject" />
+  </owl:Class>
+  <!-- http://www.owo.foundation/owo/core/PositiveEvidence -->
+  <owl:Class rdf:about="http://www.owo.foundation/owo/core/PositiveEvidence">
+    <rdfs:subClassOf rdf:resource="http://www.owo.foundation/owo/core/AuthenticationEvidence" />
+  </owl:Class>
+  <!-- http://www.owo.foundation/owo/core/Process -->
+  <owl:Class rdf:about="http://www.owo.foundation/owo/core/Process">
+    <rdfs:subClassOf rdf:resource="http://www.owo.foundation/owo/core/ExperientialObject" />
+  </owl:Class>
+  <!-- http://www.owo.foundation/owo/core/Product -->
+  <owl:Class rdf:about="http://www.owo.foundation/owo/core/Product">
+    <rdfs:subClassOf rdf:resource="http://www.owo.foundation/owo/core/ExperientialObject" />
+  </owl:Class>
+  <!-- http://www.owo.foundation/owo/core/Projection -->
+  <owl:Class rdf:about="http://www.owo.foundation/owo/core/Projection">
+    <rdfs:subClassOf rdf:resource="http://www.owo.foundation/owo/core/SpatialRelationship" />
+  </owl:Class>
+  <!-- http://www.owo.foundation/owo/core/ReferenceAuthority -->
+  <owl:Class rdf:about="http://www.owo.foundation/owo/core/ReferenceAuthority">
+    <rdfs:subClassOf rdf:resource="http://www.owo.foundation/owo/core/ObjectAuthorityCategory" />
+  </owl:Class>
+  <!-- http://www.owo.foundation/owo/core/RelationalObservation -->
+  <owl:Class rdf:about="http://www.owo.foundation/owo/core/RelationalObservation" />
+  <!-- http://www.owo.foundation/owo/core/Relationship -->
+  <owl:Class rdf:about="http://www.owo.foundation/owo/core/Relationship">
+    <rdfs:subClassOf rdf:resource="http://www.owo.foundation/owo/core/ConstructionalObject" />
+  </owl:Class>
+  <!-- http://www.owo.foundation/owo/core/RightOpenAxis -->
+  <owl:Class rdf:about="http://www.owo.foundation/owo/core/RightOpenAxis">
+    <rdfs:subClassOf rdf:resource="http://www.owo.foundation/owo/core/SpatialAxis" />
+  </owl:Class>
+  <!-- http://www.owo.foundation/owo/core/RightOpenDirection -->
+  <owl:Class rdf:about="http://www.owo.foundation/owo/core/RightOpenDirection">
+    <rdfs:subClassOf rdf:resource="http://www.owo.foundation/owo/core/OpenDirection" />
+  </owl:Class>
+  <!-- http://www.owo.foundation/owo/core/RightOpenPeriod -->
+  <owl:Class rdf:about="http://www.owo.foundation/owo/core/RightOpenPeriod">
+    <rdfs:subClassOf rdf:resource="http://www.owo.foundation/owo/core/Period" />
+  </owl:Class>
+  <!-- http://www.owo.foundation/owo/core/RightSpatialPoint -->
+  <owl:Class rdf:about="http://www.owo.foundation/owo/core/RightSpatialPoint">
+    <rdfs:subClassOf rdf:resource="http://www.owo.foundation/owo/core/SpatialPoint" />
+  </owl:Class>
+  <!-- http://www.owo.foundation/owo/core/RightTemporalBoundary -->
+  <owl:Class rdf:about="http://www.owo.foundation/owo/core/RightTemporalBoundary">
+    <rdfs:subClassOf rdf:resource="http://www.owo.foundation/owo/core/TemporalBoundary" />
+  </owl:Class>
+  <!-- http://www.owo.foundation/owo/core/RightwardDirection -->
+  <owl:Class rdf:about="http://www.owo.foundation/owo/core/RightwardDirection">
+    <rdfs:subClassOf rdf:resource="http://www.owo.foundation/owo/core/ClosedDirection" />
+  </owl:Class>
+  <!-- http://www.owo.foundation/owo/core/RoughObservation -->
+  <owl:Class rdf:about="http://www.owo.foundation/owo/core/RoughObservation">
+    <rdfs:subClassOf rdf:resource="http://www.owo.foundation/owo/core/ObjectPrecisionCategory" />
+  </owl:Class>
+  <!-- http://www.owo.foundation/owo/core/SemiOpaqueInfluentialClosedObject -->
+  <owl:Class rdf:about="http://www.owo.foundation/owo/core/SemiOpaqueInfluentialClosedObject">
+    <rdfs:subClassOf rdf:resource="http://www.owo.foundation/owo/core/InfluentialClosedObject" />
+  </owl:Class>
+  <!-- http://www.owo.foundation/owo/core/SemiOpaqueInfluentialOpenObject -->
+  <owl:Class rdf:about="http://www.owo.foundation/owo/core/SemiOpaqueInfluentialOpenObject">
+    <rdfs:subClassOf rdf:resource="http://www.owo.foundation/owo/core/InfluentialOpenObject" />
+  </owl:Class>
+  <!-- http://www.owo.foundation/owo/core/SemiOpaqueIsolatedClosedObject -->
+  <owl:Class rdf:about="http://www.owo.foundation/owo/core/SemiOpaqueIsolatedClosedObject">
+    <rdfs:subClassOf rdf:resource="http://www.owo.foundation/owo/core/IsolatedClosedObject" />
+  </owl:Class>
+  <!-- http://www.owo.foundation/owo/core/SemiOpaqueIsolatedOpenObject -->
+  <owl:Class rdf:about="http://www.owo.foundation/owo/core/SemiOpaqueIsolatedOpenObject">
+    <rdfs:subClassOf rdf:resource="http://www.owo.foundation/owo/core/IsolatedOpenObject" />
+  </owl:Class>
+  <!-- http://www.owo.foundation/owo/core/SensorReference -->
+  <owl:Class rdf:about="http://www.owo.foundation/owo/core/SensorReference">
+    <rdfs:subClassOf rdf:resource="http://www.owo.foundation/owo/core/ReferenceAuthority" />
+  </owl:Class>
+  <!-- http://www.owo.foundation/owo/core/SingularUniverseWorld -->
+  <owl:Class rdf:about="http://www.owo.foundation/owo/core/SingularUniverseWorld">
+    <rdfs:subClassOf rdf:resource="http://www.owo.foundation/owo/core/FiniteDiscreteDensityWorld" />
+  </owl:Class>
+  <!-- http://www.owo.foundation/owo/core/SocialUniverse -->
+  <owl:Class rdf:about="http://www.owo.foundation/owo/core/SocialUniverse">
+    <rdfs:subClassOf rdf:resource="http://www.owo.foundation/owo/core/MentalUniverse" />
+  </owl:Class>
+  <!-- http://www.owo.foundation/owo/core/SolidBody -->
+  <owl:Class rdf:about="http://www.owo.foundation/owo/core/SolidBody">
+    <rdfs:subClassOf rdf:resource="http://www.owo.foundation/owo/core/ClosedBody" />
+  </owl:Class>
+  <!-- http://www.owo.foundation/owo/core/SourceAuthority -->
+  <owl:Class rdf:about="http://www.owo.foundation/owo/core/SourceAuthority">
+    <rdfs:subClassOf rdf:resource="http://www.owo.foundation/owo/core/ObjectAuthorityCategory" />
+  </owl:Class>
+  <!-- http://www.owo.foundation/owo/core/SpatialAxis -->
+  <owl:Class rdf:about="http://www.owo.foundation/owo/core/SpatialAxis">
+    <rdfs:subClassOf rdf:resource="http://www.owo.foundation/owo/core/SpatialJoin" />
+  </owl:Class>
+  <!-- http://www.owo.foundation/owo/core/SpatialBody -->
+  <owl:Class rdf:about="http://www.owo.foundation/owo/core/SpatialBody">
+    <rdfs:subClassOf rdf:resource="http://www.owo.foundation/owo/core/SpatialExtent" />
+  </owl:Class>
+  <!-- http://www.owo.foundation/owo/core/SpatialBoundary -->
+  <owl:Class rdf:about="http://www.owo.foundation/owo/core/SpatialBoundary">
+    <rdfs:subClassOf rdf:resource="http://www.owo.foundation/owo/core/SpatialObservation" />
+  </owl:Class>
+  <!-- http://www.owo.foundation/owo/core/SpatialDirection -->
+  <owl:Class rdf:about="http://www.owo.foundation/owo/core/SpatialDirection">
+    <rdfs:subClassOf rdf:resource="http://www.owo.foundation/owo/core/SpatialJoin" />
+  </owl:Class>
+  <!-- http://www.owo.foundation/owo/core/SpatialDistance -->
+  <owl:Class rdf:about="http://www.owo.foundation/owo/core/SpatialDistance">
+    <rdfs:subClassOf rdf:resource="http://www.owo.foundation/owo/core/SpatialAxis" />
+  </owl:Class>
+  <!-- http://www.owo.foundation/owo/core/SpatialExtent -->
+  <owl:Class rdf:about="http://www.owo.foundation/owo/core/SpatialExtent">
+    <rdfs:subClassOf rdf:resource="http://www.owo.foundation/owo/core/ObjectSpatialExtentCategory" />
+  </owl:Class>
+  <!-- http://www.owo.foundation/owo/core/SpatialJoin -->
+  <owl:Class rdf:about="http://www.owo.foundation/owo/core/SpatialJoin">
+    <rdfs:subClassOf rdf:resource="http://www.owo.foundation/owo/core/SpatialObservation" />
+  </owl:Class>
+  <!-- http://www.owo.foundation/owo/core/SpatialObservation -->
+  <owl:Class rdf:about="http://www.owo.foundation/owo/core/SpatialObservation">
+    <rdfs:subClassOf rdf:resource="http://www.owo.foundation/owo/core/ObjectSpatialExtentCategory" />
+  </owl:Class>
+  <!-- http://www.owo.foundation/owo/core/SpatialPoint -->
+  <owl:Class rdf:about="http://www.owo.foundation/owo/core/SpatialPoint">
+    <rdfs:subClassOf rdf:resource="http://www.owo.foundation/owo/core/SpatialObservation" />
+  </owl:Class>
+  <!-- http://www.owo.foundation/owo/core/SpatialRegion -->
+  <owl:Class rdf:about="http://www.owo.foundation/owo/core/SpatialRegion">
+    <rdfs:subClassOf rdf:resource="http://www.owo.foundation/owo/core/SpatialExtent" />
+  </owl:Class>
+  <!-- http://www.owo.foundation/owo/core/SpatialRelationship -->
+  <owl:Class rdf:about="http://www.owo.foundation/owo/core/SpatialRelationship">
+    <rdfs:subClassOf rdf:resource="http://www.owo.foundation/owo/core/ObjectSpatialExtentCategory" />
+  </owl:Class>
+  <!-- http://www.owo.foundation/owo/core/SymbolicFunction -->
+  <owl:Class rdf:about="http://www.owo.foundation/owo/core/SymbolicFunction">
+    <rdfs:subClassOf rdf:resource="http://www.owo.foundation/owo/core/SymbolicObject" />
+  </owl:Class>
+  <!-- http://www.owo.foundation/owo/core/SymbolicInterpretation -->
+  <owl:Class rdf:about="http://www.owo.foundation/owo/core/SymbolicInterpretation">
+    <rdfs:subClassOf rdf:resource="http://www.owo.foundation/owo/core/ObjectSymbolicCategory" />
+  </owl:Class>
+  <!-- http://www.owo.foundation/owo/core/SymbolicObject -->
+  <owl:Class rdf:about="http://www.owo.foundation/owo/core/SymbolicObject">
+    <rdfs:subClassOf rdf:resource="http://www.owo.foundation/owo/core/Object" />
+  </owl:Class>
+  <!-- http://www.owo.foundation/owo/core/SymbolicOriginal -->
+  <owl:Class rdf:about="http://www.owo.foundation/owo/core/SymbolicOriginal">
+    <rdfs:subClassOf rdf:resource="http://www.owo.foundation/owo/core/ObjectSymbolicCategory" />
+  </owl:Class>
+  <!-- http://www.owo.foundation/owo/core/SymbolicReference -->
+  <owl:Class rdf:about="http://www.owo.foundation/owo/core/SymbolicReference">
+    <rdfs:subClassOf rdf:resource="http://www.owo.foundation/owo/core/ObjectSymbolicCategory" />
+  </owl:Class>
+  <!-- http://www.owo.foundation/owo/core/SymbolicValue -->
+  <owl:Class rdf:about="http://www.owo.foundation/owo/core/SymbolicValue">
+    <rdfs:subClassOf rdf:resource="http://www.owo.foundation/owo/core/SymbolicObject" />
+  </owl:Class>
+  <!-- http://www.owo.foundation/owo/core/TemporalBoundary -->
+  <owl:Class rdf:about="http://www.owo.foundation/owo/core/TemporalBoundary">
+    <rdfs:subClassOf rdf:resource="http://www.owo.foundation/owo/core/PerdurantObservation" />
+  </owl:Class>
+  <!-- http://www.owo.foundation/owo/core/TemporalEvent -->
+  <owl:Class rdf:about="http://www.owo.foundation/owo/core/TemporalEvent">
+    <rdfs:subClassOf rdf:resource="http://www.owo.foundation/owo/core/Event" />
+  </owl:Class>
+  <!-- http://www.owo.foundation/owo/core/TemporalLeftOpenPeriod -->
+  <owl:Class rdf:about="http://www.owo.foundation/owo/core/TemporalLeftOpenPeriod">
+    <rdfs:subClassOf rdf:resource="http://www.owo.foundation/owo/core/LeftOpenPeriod" />
+  </owl:Class>
+  <!-- http://www.owo.foundation/owo/core/TextualReference -->
+  <owl:Class rdf:about="http://www.owo.foundation/owo/core/TextualReference">
+    <rdfs:subClassOf rdf:resource="http://www.owo.foundation/owo/core/ReferenceAuthority" />
+  </owl:Class>
+  <!-- http://www.owo.foundation/owo/core/TextualSource -->
+  <owl:Class rdf:about="http://www.owo.foundation/owo/core/TextualSource">
+    <rdfs:subClassOf rdf:resource="http://www.owo.foundation/owo/core/SourceAuthority" />
+  </owl:Class>
+  <!-- http://www.owo.foundation/owo/core/TextualUniverse -->
+  <owl:Class rdf:about="http://www.owo.foundation/owo/core/TextualUniverse">
+    <rdfs:subClassOf rdf:resource="http://www.owo.foundation/owo/core/MentalUniverse" />
+  </owl:Class>
+  <!-- http://www.owo.foundation/owo/core/ThermoplasticSolidBody -->
+  <owl:Class rdf:about="http://www.owo.foundation/owo/core/ThermoplasticSolidBody">
+    <rdfs:subClassOf rdf:resource="http://www.owo.foundation/owo/core/SolidBody" />
+  </owl:Class>
+  <!-- http://www.owo.foundation/owo/core/ThermosetSolidBody -->
+  <owl:Class rdf:about="http://www.owo.foundation/owo/core/ThermosetSolidBody">
+    <rdfs:subClassOf rdf:resource="http://www.owo.foundation/owo/core/SolidBody" />
+  </owl:Class>
+  <!-- http://www.owo.foundation/owo/core/TransparentInfluentialClosedObject -->
+  <owl:Class rdf:about="http://www.owo.foundation/owo/core/TransparentInfluentialClosedObject">
+    <rdfs:subClassOf rdf:resource="http://www.owo.foundation/owo/core/InfluentialClosedObject" />
+  </owl:Class>
+  <!-- http://www.owo.foundation/owo/core/TransparentInfluentialOpenObject -->
+  <owl:Class rdf:about="http://www.owo.foundation/owo/core/TransparentInfluentialOpenObject">
+    <rdfs:subClassOf rdf:resource="http://www.owo.foundation/owo/core/InfluentialOpenObject" />
+  </owl:Class>
+  <!-- http://www.owo.foundation/owo/core/TransparentIsolatedClosedObject -->
+  <owl:Class rdf:about="http://www.owo.foundation/owo/core/TransparentIsolatedClosedObject">
+    <rdfs:subClassOf rdf:resource="http://www.owo.foundation/owo/core/IsolatedClosedObject" />
+  </owl:Class>
+  <!-- http://www.owo.foundation/owo/core/TransparentIsolatedOpenObject -->
+  <owl:Class rdf:about="http://www.owo.foundation/owo/core/TransparentIsolatedOpenObject">
+    <rdfs:subClassOf rdf:resource="http://www.owo.foundation/owo/core/IsolatedOpenObject" />
+  </owl:Class>
+  <!-- http://www.w3.org/2002/07/owl#Thing -->
+  <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Thing" />
+</rdf:RDF>
+<!--Generated by Cognitum FluentEditor2, a part of Ontorion(TM) Knowledge Management Framework, (with support of OwlApi)-->

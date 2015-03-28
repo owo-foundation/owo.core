@@ -1,0 +1,17 @@
+Title: 'OWO World Ontology - Core Concepts'.
+Author: 'Marcelle von Wendland'.
+
+Namespace: 'http://www.owo.foundation/owo/core/'.
+
+Part-xx: 'context'.
+
+Something is an entity[owo] if-and-only-if-it is something.
+
+Every object[owo] is an entity[owo].
+Every model-layer[owo] is an entity[owo].
+Every object-extent[owo] is an entity[owo].
+Every moment[owo] is an entity[owo].
+Every observation-entity[owo] is an entity[owo].
+
+References:
+[owo] 'http://www.owo.foundation/owo/core/core.owl#').
